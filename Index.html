@@ -1,0 +1,109 @@
+<html>
+ <head>
+  <title>Home</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="Style.css">
+ </head>
+ <body>
+  <nav>
+      <ul class="nav-bar">
+        <li class="logo"><a href="#"><img src="img/logo.png" alt="logo"></a></li>
+        <input type="checkbox"id="check">
+        <span class="menu">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Education.html">Education</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="Registration.html">Registration</a></li>
+          <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+        </span>
+        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+      </ul>
+    </nav>
+    <div class="slideshow-container">
+		<div class="slide">
+			<img src="img/foto1.jpg" alt="foto slide 1">
+		</div>
+		<div class="slide">
+			<img src="img/foto2.jpg" alt="foto slide 2">
+		</div>
+		<div class="slide">
+			<img src="img/foto3.jpg" alt="foto slide 3">
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("slide");
+			if (n > slides.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slides[slideIndex-1].style.display = "block";
+		}
+	</script>
+  <div class="container">
+   <section class="text-section">
+    <h1>Welcome to my <span>Website</span></h1>
+    <p>Selamat datang di website pribadi saya! NIM saya di perkuliahan adalah 102230039, website ini saya buat sebagai bagian dari Tugas Kuliah untuk Mata Kuliah Pemrograman Web I. Di sini, kamu bisa menjelajahi berbagai halaman yang telah saya siapkan dengan penuh perhatian.</p>
+          <p></p>
+          <p>Pada halaman "Home" ini, saya ingin menyampaikan gambaran umum tentang website ini. Selain itu, terdapat halaman "Profile" yang berisi informasi lebih lengkap mengenai diri saya, minat, serta perjalanan hidup yang membentuk saya hingga saat ini. Di halaman "Education", kamu bisa melihat latar belakang pendidikan dan pencapaian akademis saya. Jangan lupa untuk mampir ke halaman "Gallery" di mana saya menampilkan berbagai momen berharga dalam bentuk foto, karya, dan berbagai hal menarik lainnya. Terakhir, jika kamu ingin berkomunikasi atau memberikan masukan, halaman "Contact Us" siap menerima kritik dan saran dari kamu.
+          </p>
+          <p>Terima kasih sudah mengunjungi, semoga website ini bisa memberikan informasi dan pengalaman yang bermanfaat. Selamat menjelajahi!
+          </p>
+    <div class="btn-group">
+    </div>
+   </section>
+   <section class="experience-section">
+    <h2>Experience</h2>
+    <ul class="experience-list">
+     <li>
+      <h3>Desain Graphics</h3>
+      <p>Aku punya ketertarikan besar di dunia editing dan desain, terutama untuk foto dan vektor. Meskipun baru menguasai dasar-dasarnya, aku selalu semangat belajar dan terus mengasah kemampuan supaya bisa mencapai level terbaik!</p>
+      <p class="date">2018-Now<span> Still Learning</span></p>
+     </li>
+     <li>
+      <h3>Photographer</h3>
+      <p>Selain editing dan desain, aku juga punya ketertarikan besar dalam fotografi dan videografi. Belajar teknik dan ilmunya selalu menarik, membuatku makin semangat untuk mendalami dunia visual ini. Rasanya ada hubungan yang kuat antara fotografi, desain, dan editing—semuanya saling melengkapi, dan membuat proses kreatifku semakin seru!</p>
+      <p class="date">2022-Now<span> Still Learning</span></p>
+     </li>
+    </ul>
+   </section>
+  </div>
+   <section class="contact-section">
+    <h2>Get in Touch</h2>
+    <p>Kalau kamu tertarik dengan apa pun tentang editing, desain, atau fotografiku, jangan ragu untuk menghubungi lewat formulir di bawah ini ya! Aku bakal senang berbagi atau berdiskusi lebih lanjut.</p>
+    <div class="contact-form">
+     <input type="text" placeholder="Name">
+     <input type="email" placeholder="Email">
+     <textarea placeholder="Message"></textarea>
+     <button type="submit">Send</button>
+    </div>
+    <div class="social-links">
+     <a href="https://www.facebook.com/fahmi.sirojul.39?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+     <a href="https://x.com/Alok270905?t=DtnklR8CWXvDOd-LrCsocg&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+     <a href="https://www.instagram.com/munirfahmi2/profilecard/?igsh=dWNyc2hkams4ejRy" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+   </section>
+  <footer class="footer">
+   <div class="copyright">102230039 Fahmi Muhammad Sirojul Munir</div>
+   <div class="social-links">
+    <a href="https://www.facebook.com/fahmi.sirojul.39?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://x.com/Alok270905?t=DtnklR8CWXvDOd-LrCsocg&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/munirfahmi2/profilecard/?igsh=dWNyc2hkams4ejRy" target="_blank"><i class="fab fa-instagram"></i></a>
+   </div>
+  </footer>
+ </body>
+</html>

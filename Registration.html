@@ -1,0 +1,201 @@
+<html>
+ <head>
+  <title>Registration</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="Style.css">
+ </head>
+ <body>
+  <nav>
+      <ul class="nav-bar">
+        <li class="logo"><a href="#"><img src="img/logo.png" alt="logo"></a></li>
+        <input type="checkbox"id="check">
+        <span class="menu">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Education.html">Education</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="Registration.html">Registration</a></li>
+          <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+        </span>
+        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+      </ul>
+    </nav>
+  <div class="container">
+    <section class="registration-section">
+    <form>
+    <h1>Registration</h1> 
+        <div class="pendaftaran">
+            <table class="table">
+                <tr>
+                    <td class="left-column">Nama Depan</td>
+                    <td class="left-column"><input type="text" name="nama_depan"></td>
+                    <td class="right-column">Nama Belakang</td>
+                    <td class="right-column"><input type="text" name="nama_belakang"></td>
+                </tr>
+                <tr>
+                    <td class="left-column">Alamat</td>
+                    <td class="left-column"><input type="text" name="alamat"></td>
+                    <td class="right-column">E-mail</td>
+                    <td class="right-column"><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td class="left-column">No HP</td>
+                    <td class="left-column"><input type="text" name="no_hp"></td>
+                    <td class="right-column">Nik/No KTP</td>
+                    <td class="right-column"><input type="text" name="Nik/No KTP"></td>
+                <tr>
+                    <td class="right-column">Agama</td>
+                    <td class="right-column">
+                        <select name="agama">
+                            <option value="">--Silahkan Pilih--</option>
+                            <option value="Islam">Islam</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Budha">Budha</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left-column">Pekerjaan</td>
+                    <td class="left-column">
+                        <select name="pekerjaan">
+                            <option value="">--Silahkan Pilih--</option>
+                            <option value="Swasta">Swasta</option>
+                            <option value="PNS">PNS</option>
+                            <option value="TNI">TNI</option>
+                            <option value="Polri">Polri</option>
+                            <option value="Dokter">Dokter</option>
+                            <option value="Programmer">Programmer</option>
+                            <option value="DPR">DPR</option>
+                            <option value="Guru">Guru</option>
+                            <option value="Dosen">Dosen</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </td>
+                    <td class="right-column">Jenis Kelamin</td>
+                    <td class="right-column">
+                        <select name="jenis_kelamin">
+                            <option value="">--Silahkan Pilih--</option>
+                            <option value="Laki-laki">Laki-laki</option>
+                            <option value="Perempuan">Perempuan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left-column">Url website</td>
+                    <td class="left-column"><input type="text" name="Url website"></td>
+                    <td class="right-column">Url Facebook</td>
+                    <td class="right-column"><input type="text" name="Url Facebook"></td>
+                </tr>
+                <tr>
+                    <td class="left-column">Url tiktok</td>
+                    <td class="left-column"><input type="text" name="Url tiktok"></td>
+                    <td class="right-column">Url instagram</td>
+                    <td class="right-column"><input type="text" name="Url instagram"></td>
+                </tr>
+                <tr>
+                    <td class="left-column">Nama ayah</td>
+                    <td class="left-column"><input type="text" name="Nama ayah"></td>
+                    <td class="right-column">Nama ibu</td>
+                    <td class="right-column"><input type="text" name="Nama ibu"></td>
+                </tr>
+                <tr>
+                    <td class="left-column">Alamat ayah</td>
+                    <td class="left-column"><input type="text" name="Alamat ayah"></td>
+                    <td class="right-column">Alamat ibu</td>
+                    <td class="right-column"><input type="text" name="Alamat ibu"></td>
+                </tr>
+                <tr>
+                    <td class="left-column">Nik ayah</td>
+                    <td class="left-column"><input type="text" name="Nik ayah"></td>
+                    <td class="right-column">Nik ibu</td>
+                    <td class="right-column"><input type="text" name="Nik ibu"></td>
+                </tr>
+                <tr>
+                    <td class="left-column">Pekerjaan ayah</td>
+                    <td class="left-column">
+                        <select name="pekerjaan ayah">
+                            <option value="">--Silahkan Pilih--</option>
+                            <option value="Swasta">Swasta</option>
+                            <option value="PNS">PNS</option>
+                            <option value="TNI">TNI</option>
+                            <option value="Polri">Polri</option>
+                            <option value="Dokter">Dokter</option>
+                            <option value="Programmer">Programmer</option>
+                            <option value="DPR">DPR</option>
+                            <option value="Guru">Guru</option>
+                            <option value="Dosen">Dosen</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </td>
+                    <td class="right-column">Jenis Kelamin</td>
+                    <td class="right-column">
+                        <select name="jenis_kelamin">
+                            <option value="">--Silahkan Pilih--</option>
+                            <option value="Laki-laki">Laki-laki</option>
+                            <option value="Perempuan">Perempuan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left-column">No HP ayah</td>
+                    <td class="left-column"><input type="text" name="NO HP ayah"></td>
+                    <td class="right-column">No HP ibu</td>
+                    <td class="right-column"><input type="text" name="No HP ibu"></td>
+                </tr>
+                <tr>
+                    <td class="green"></td>
+                    <td class="green" colspan="5"></td>
+                </tr>
+                <tr>
+                    <td class="green">Username</td>
+                    <td class="green"><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td class="green"></td>
+                    <td class="green" colspan="5"></td>
+                </tr>
+                <tr>
+                    <td class="green">Password</td>
+                    <td class="green"><input type="password" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td class="green"></td>
+                    <td class="green" colspan="5"></td>
+                </tr>
+                    <td class="green">Re-type password</td>
+                    <td class="green"><input type="password" name="" id=""></td>
+                <tr>
+                    <td class="left-column"><input type="submit" value="submit">
+                    </td>
+                </tr>
+            </table>
+    </form>
+    </section>
+</div>
+<section class="contact-section">
+    <h2>Get in Touch</h2>
+    <p>Kalau kamu tertarik dengan apa pun tentang editing, desain, atau fotografiku, jangan ragu untuk menghubungi lewat formulir di bawah ini ya! Aku bakal senang berbagi atau berdiskusi lebih lanjut.</p>
+    <div class="contact-form">
+     <input type="text" placeholder="Name">
+     <input type="email" placeholder="Email">
+     <textarea placeholder="Message"></textarea>
+     <button type="submit">Send</button>
+    </div>
+    <div class="social-links">
+     <a href="https://www.facebook.com/fahmi.sirojul.39?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+     <a href="https://x.com/Alok270905?t=DtnklR8CWXvDOd-LrCsocg&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+     <a href="https://www.instagram.com/munirfahmi2/profilecard/?igsh=dWNyc2hkams4ejRy" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+   </section>
+  <footer class="footer">
+   <div class="copyright">102230039 Fahmi Muhammad Sirojul Munir</div>
+   <div class="social-links">
+    <a href="https://www.facebook.com/fahmi.sirojul.39?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://x.com/Alok270905?t=DtnklR8CWXvDOd-LrCsocg&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/munirfahmi2/profilecard/?igsh=dWNyc2hkams4ejRy" target="_blank"><i class="fab fa-instagram"></i></a>
+   </div>
+  </footer>
+ </body>
+</html>
